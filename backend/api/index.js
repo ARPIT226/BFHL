@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 app.use(cors({
-    origin: 'https://66f0135a22edb7a468ad7b2c--exquisite-swan-5bb193.netlify.app/', // Allow requests from this domain
+    origin: 'https://bfhl-frontend-74ebfbl9m-arpit-sagars-projects.vercel.app/', // Allow requests from this domain
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
   }));
