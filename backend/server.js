@@ -8,9 +8,7 @@ app.use(cors()); // Enable CORS
 
 const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('BFHL Backend is running');
-  });
+
 
 // POST Route for /bfhl
 app.post('/bfhl', (req, res) => {

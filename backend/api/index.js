@@ -8,6 +8,10 @@ app.use(express.json());
 
 const port = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+    res.send('BFHL Backend is running');
+  }); 
+
 app.post('/bfhl', (req, res) => {
     const { data } = req.body;
 
