@@ -1,9 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 
+app.use(cors({
+    origin: 'https://66f0135a22edb7a468ad7b2c--exquisite-swan-5bb193.netlify.app/', // Allow requests from this domain
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+  }));
+
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 
 const port = process.env.PORT || 3000;
