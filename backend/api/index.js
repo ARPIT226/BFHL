@@ -1,12 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 
-const corsOptions = {
-    origin: 'https://bfhl-frontend-74ebfbl9m-arpit-sagars-projects.vercel.app/', // Replace with your actual Netlify domain
-  optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
+app.use(cors({
+    origin: 'https://bfhl-frontend-74ebfbl9m-arpit-sagars-projects.vercel.app/', // Allow requests from this domain
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+  }));
 
 const app = express();
 
