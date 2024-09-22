@@ -1,11 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 
-app.use(cors({
-    origin: 'https://bfhl-frontend-74ebfbl9m-arpit-sagars-projects.vercel.app/', // Allow requests from this domain
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type'],
-  }));
+const corsOptions = {
+  origin: 'https://bfhl-frontend-74ebfbl9m-arpit-sagars-projects.vercel.app/',
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 const app = express();
 
